@@ -1,10 +1,7 @@
-const nombre = document.getElementById("nombre");
 
-nombre.onfocus = function () {
+let nombre = document.getElementById("nombre");
+let resultado = document.getElementById("resultado");
 
-    const valor = nombre.value;
-
-    document.getElementById("resultado").textContent =
-        "Valor actual: " + valor;
-
-};
+nombre.onfocus = function() {
+    resultado.textContent = nombre.value
+}
