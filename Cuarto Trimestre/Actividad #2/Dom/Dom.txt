@@ -1,0 +1,8 @@
+El DOM (Document Object Model) 
+es una representación del documento HTML en forma de objetos. Permite que JavaScript acceda, modifique, agregue o elimine elementos de una página web.
+/////////////////////////////////////////////////////////
+createElement:
+createElement() es un método del objeto document que permite crear un nuevo elemento HTML de forma dinámica mediante JavaScript. El elemento se crea en memoria y no aparece en la página hasta que se agrega al DOM, por ejemplo con appendChild().
+////////////////////////////////////////////////////////////
+appendChild:
+appendChild() es un método de JavaScript que agrega un elemento hijo dentro de otro elemento del HTML. Se utiliza para insertar un elemento en el DOM y hacerlo visible en la página.
