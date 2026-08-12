@@ -1,0 +1,11 @@
+.juego {
+    width: 600px;
+    height: 400px;
+    border: 2px solid black;
+    position: relative;
+}
+.boton {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
