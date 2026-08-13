@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de animales</title>
+</head>
+
+<body>
+    <h1>Catálogo de animales</h1>
+    <label for="nombre">Nombre</label>
+    <input type="text" 
+    id="nombre">
+    <br><br>
+    <label for="especie">Especie</label>
+    <input type="text" 
+    id="especie">
+    <br><br>
+    <label for="edad">Edad</label>
+    <input type="number" 
+    id="edad">
+    <br><br>
+    <label for="habitat">Hábitat</label>
+    <input type="text" 
+    id="habitat">
+    <br><br>
+    <label for="imagen">URL de la imagen</label>
+    <input type="text" 
+    id="imagen">
+    <br><br>
+    <button onclick="guardar()">Guardar animal</button>
+    <button onclick="mostrarAnimales()">Mostrar animales</button>
+    <div id="contenedor"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
+<!-- Nombre: Luna
+Especie: Perro
+Edad: 3
+Hábitat: Doméstico
+Nombre: Simba
+Especie: León
+Edad: 5
+Hábitat: Sabana -->
