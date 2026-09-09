@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Biblioteca</title>
+</head>
+<body>
+<h1> Registro usuarios</h1>
+<label for="nombre">Nombre</label>
+<input 
+type="text"
+id="nombre"
+placeholder="escribe tu nombre">
+<br><br>
+<label for="apellido">apellido</label>
+<input type="text"
+id="apellido"
+placeholder="esscribe tu apellido">
+<br><br>
+<label for="documento">Documento</label>
+<input type="text"
+id="documento"
+placeholder="123456">
+<br><br>
+<label for="correo">Correo</label>
+<input type="email"
+id="correo"
+placeholder="@gmail.com">
+<br><br>
+<label for="contraseña">Contraseña</label>
+<input type="password"
+id="password"
+placeholder="Contraseña">
+<br><br>
+<label for="tipo">Cargo:</label>
+<select id="tipo">
+    <option value="">Vacio</option>
+    <option value="Administrador">Administrador</option>
+    <option value="Biblioteca">Biblioteca</option>
+    <option value="lector">lector</option>
+</select>
+<br><br>
+<button onclick="guardar()" >guardar</button>
+<br><br>
+<a href="inicio.html">inicio</a>
+
+<script src="registro.js" ></script>
+    
+</body>
+</html>
