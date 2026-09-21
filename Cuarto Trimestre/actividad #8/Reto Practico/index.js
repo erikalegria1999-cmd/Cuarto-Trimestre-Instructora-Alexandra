@@ -12,7 +12,6 @@ async function mostrarUsuario() {
     const resultado = await consultarUsuario();
     const tiempo = (Date.now() - inicio) / 1000;
     mensaje.textContent = resultado;
-
     Swal.fire({
         title: "Usuario encontrado",
         text: "La consulta tardó " + tiempo + " segundos.",
@@ -20,5 +19,4 @@ async function mostrarUsuario() {
     });
     console.log("Proceso terminado");
 }
-
 document.getElementById("btnConsultar").onclick = mostrarUsuario;
