@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.app {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* SIDEBAR ESTÁNDAR CON ANCHO COMPLETO */
+.sidebar {
+    width: 220px;
+    min-width: 220px;
+    background: #ffffff;
+    border-right: 1px solid #e5e7eb;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 18px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.logo h1 {
+    font-size: 1.3rem;
+    color: #111827;
+}
+
+.logo p {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin-top: 2px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #4b5563;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.menu a:hover {
+    background-color: #fff7ed;
+    color: darkorange;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-top: 1px solid #f1f5f9;
+    padding-top: 16px;
+    font-size: 0.9rem;
+}
+
+/* DASHBOARD */
+.dashboard {
+    flex: 1;
+    margin-left: 220px;
+    padding: 32px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+    gap: 20px;
+}
+
+/* TARJETA */
+.card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: relative;
+}
+
+.card img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: #f3f4f6;
+}
+
+.card h3 {
+    font-size: 1.1rem;
+    color: #111827;
+}
+
+.categoria {
+    font-size: 0.75rem;
+    color: #9ca3af;
+    text-transform: uppercase;
+}
+
+.precio {
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: darkorange;
+}
+
+.estado {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: #ecfdf5;
+    color: #059669;
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+}
+
+.btn {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.btn:hover {
+    background-color: #e07b00;
+}
