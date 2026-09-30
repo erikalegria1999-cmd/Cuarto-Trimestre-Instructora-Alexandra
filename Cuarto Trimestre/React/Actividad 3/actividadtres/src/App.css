@@ -1,0 +1,175 @@
+
+.biblioteca img {
+    width: 500px;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px grey;
+    }
+.biblioteca h1 {
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+.biblioteca h2{
+    padding: 5px;
+    
+}
+.ciudades h1{
+    padding: 10px;
+    margin: 15px;
+    border: 2px solid black;
+    background-color: yellow;
+    box-shadow: 5px 5px 8px #17ff;
+    border-radius: 15px;
+    width: 500px;
+    justify-content: center;
+}   
+.ciudades p {
+    padding: 10px;
+    margin: 5px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 45px;
+    border: 2px solid black;
+    width: 500px;
+    border-radius: 15px;
+    background-color: #17ff;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 2px 2px 6px yellow;
+}
+.canciones {
+    padding: 40px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    text-align: center;
+}
+.canciones h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #222;
+}
+/* Contenedor de cada canción */
+.canciones > div:not(:first-child) {
+    display: inline-block;
+    vertical-align: top;
+    width: 280px;
+    min-height: 400px;
+    margin: 15px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* Efecto al pasar el mouse */
+.canciones > div:not(:first-child):hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+/* Imagen de la canción */
+.canciones img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+/* Título */
+.canciones h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+/* ID */
+.canciones p {
+    font-size: 14px;
+    color: #777;
+    margin: 8px 0;
+}
+.animales h1{
+    text-align: center;
+    color: black;
+    padding: 5px;
+}
+.animales p {
+    padding: 8px;
+    margin: 5px;
+}
+/* turismo */
+.turismo {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+    font-family: Arial, sans-serif;
+    color: #222;
+}
+
+/* Título principal */
+.turismo h1 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Texto de bienvenida */
+.turismo p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.turismo p strong {
+    margin-left: 5px;
+}
+
+/* Subtítulo */
+.turismo h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Tablas */
+.turismo table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+/* Encabezados */
+.turismo th {
+    background-color: #f1f1f1;
+    color: #222;
+    text-align: left;
+    padding: 15px;
+    font-size: 17px;
+}
+
+/* Datos */
+.turismo td {
+    padding: 15px;
+    font-size: 17px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Efecto al pasar el mouse */
+.turismo tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Primera columna */
+.turismo th:first-child,
+.turismo td:first-child {
+    width: 60px;
+}
+
+/* Última columna */
+.turismo th:last-child,
+.turismo td:last-child {
+    text-align: right;
+}
