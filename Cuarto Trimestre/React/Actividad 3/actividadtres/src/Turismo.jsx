@@ -71,6 +71,6 @@ function Turismo(){
                 )
             )}
         </div>
-    )
+    ) 
 }
 export default Turismo

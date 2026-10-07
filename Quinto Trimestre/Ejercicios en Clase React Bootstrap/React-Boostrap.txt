@@ -1,0 +1,6 @@
+Instalar dentro del proyecto 
+npm install react-bootstrap Bootstrap
+
+Vamos A Main.JSX y agregamos
+import 'bootstrap/dist/css/bootstrap.min.css';
+

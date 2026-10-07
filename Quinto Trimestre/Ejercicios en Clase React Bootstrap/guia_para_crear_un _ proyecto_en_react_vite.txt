@@ -1,0 +1,66 @@
+====================================================================
+  GUÍA PASO A PASO: CREACIÓN DE PROYECTO REACT + VITE CON GIT BASH
+====================================================================
+
+PASO 1: Abrir la terminal
+--------------------------------------------------------------------
+- Dirígete a la carpeta donde quieras guardar tu proyecto.
+- Haz clic derecho y selecciona "Open Git Bash here".
+
+
+PASO 2: Verificar la instalación de Node.js
+--------------------------------------------------------------------
+- Comprueba que tienes Node instalado en tu equipo ejecutando:
+
+  node --version
+
+
+PASO 3: Crear el proyecto con Vite
+--------------------------------------------------------------------
+- Ejecuta el comando de creación reemplazando [nombre-del-proyecto] 
+  por el nombre de tu elección:
+
+  npm create vite@latest [nombre-del-proyecto]
+
+- Acepta la instalación del paquete `create-vite` ingresando 'y':
+  Ok to proceed? (y) -> y + Enter
+
+
+PASO 4: Responder a las opciones del menú interactivo
+--------------------------------------------------------------------
+- Select a framework:  -> Selecciona: React
+- Select a variant:    -> Selecciona: JavaScript
+- Which linter to use? -> Selecciona: ESLint
+- Install with npm and start now? -> Selecciona: No
+
+
+PASO 5: Navegar al proyecto y abrir en VS Code
+--------------------------------------------------------------------
+- Ingresa a la carpeta creada con el comando cd:
+
+  cd [nombre-del-proyecto]
+
+- Abre el proyecto directamente en Visual Studio Code:
+
+  code .
+
+
+PASO 6: Instalar las dependencias
+--------------------------------------------------------------------
+- Abre la terminal integrada en VS Code (o continúa en Git Bash).
+- Ejecuta el comando de instalación de paquetes:
+
+  npm install
+
+- Espera a que termine la instalación (verás un resumen de los 
+  paquetes añadidos y vulnerabilidades encontradas).
+
+
+PASO 7: Iniciar el servidor de desarrollo
+--------------------------------------------------------------------
+- Levanta el servidor local ejecutando:
+
+  npm run dev
+
+- En la consola se mostrará la URL local (por ejemplo, http://localhost:5173).
+- Haz Ctrl + Clic sobre el enlace para abrir la aplicación en tu navegador.
