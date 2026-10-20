@@ -1,0 +1,29 @@
+========================================
+PASOS PARA INICIALIZAR UN PROYECTO DE NODE.JS CON EXPRESS Y NODEMON
+========================================
+
+1. Crear y abrir la carpeta del proyecto:
+   - Crear una carpeta nueva para el proyecto.
+   - Abrir la terminal (CMD) en dicha carpeta y abrir el editor con el comando:
+     code .
+
+2. Inicializar el proyecto:
+   - Ejecutar el siguiente comando en la terminal para crear el archivo package.json con la configuración por defecto:
+     npm init -y
+
+3. Instalar Express:
+   - Instalar el paquete de Express para el servidor ejecutando:
+     npm install express
+
+4. Instalar Nodemon (Dependencia de desarrollo):
+   - Instalar Nodemon como dependencia de desarrollo para reiniciar automáticamente el servidor al detectar cambios:
+     npm install --save-dev nodemon
+
+5. Configurar los scripts en el archivo package.json:
+   - Abrir el archivo package.json y actualizar la sección de "scripts" con la siguiente estructura:
+
+     "scripts": {
+       "test": "echo \"Error: no test specified\" && exit 1",
+       "start": "node app.js",
+       "dev": "nodemon app.js"
+     }
