@@ -1,0 +1,15 @@
+========================================
+INSTALACIÓN DE BOOTSTRAP EN REACT
+========================================
+
+1. Instalar las dependencias en la terminal del proyecto:
+
+   npm install react-bootstrap bootstrap
+
+2. Importar los estilos globales en "src/main.jsx":
+
+   - Agregar esta línea al inicio del archivo:
+
+     import 'bootstrap/dist/css/bootstrap.min.css';
+
+```

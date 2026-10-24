@@ -1,0 +1,101 @@
+===================================================================
+
+ GUÍA PASO A PASO: CÓMO CONECTAR Y CONSUMIR UNA API (EXPRESS Y REACT)
+
+===================================================================
+-------------------------------------------------------------------
+
+ PARTE 1: CONFIGURAR EL BACKEND (Express.js)
+
+-------------------------------------------------------------------
+1. Instalar el paquete CORS:
+
+   Abre la terminal en la carpeta de tu backend y ejecuta:   
+
+   npm install cors
+
+2. Importar y configurar CORS en Express:
+
+   Abre tu archivo principal (ej. index.js o app.js) y agrega lo siguiente:
+
+   // Importamos Express y CORS
+   const express = require('cors'); // Importante importarlo con require
+   const cors = require('cors');
+   const app = express();
+
+   // Habilitamos CORS permitiendo la URL de nuestro Frontend
+   app.use(cors({
+     origin: "http://localhost:5173" // Reemplaza por la URL donde corre tu Frontend
+
+   }));
+
+   // Ejemplo de una ruta en Express
+   app.get('/api/datos', (req, res) => {
+     res.json({ mensaje: "Conexión exitosa desde el backend" });
+   });
+   app.listen(3000, () => console.log("Servidor corriendo en puerto 3000"));
+
+-------------------------------------------------------------------
+
+ PARTE 2: CREAR LA FUNCIÓN PARA CONSUMIR LA API EN EL FRONTEND
+
+-------------------------------------------------------------------
+Para obtener datos del servidor usamos una función asíncrona (async / await).
+
+Usamos "async" porque la petición a la red no es instantánea y debe esperar
+
+a que el servidor responda sin bloquear el resto de la página.
+
+Crea un archivo de servicios o funciones (ej. apiService.js):
+
+  export default function Erik (){
+
+        // 1. Hacemos la petición con fetch a la URL del backend (sin la barra '/' al final si la ruta no la requiere)
+
+       const respuesta = await fetch("http://localhost:3000/api/datos");
+
+       // 2. Convertimos la respuesta recibida a formato JSON
+
+       const datos = await respuesta.json();
+
+       // 3. Mostramos los datos en la consola para verificar
+
+       console.log("Datos recibidos del backend:", datos);
+
+       return()
+   }
+-------------------------------------------------------------------
+
+ PARTE 3: USAR LA FUNCIÓN DENTRO DE UN COMPONENTE DE REACT
+
+-------------------------------------------------------------------
+
+Ejemplo en un componente de React (ej. App.jsx)   
+import { useState } from "react"
+export default function Erik (){
+    const [mensaje,setMensaje] = useState("")
+    async function consumoApi(){
+        let respuesta = await fetch("http://127.0.0.1:3000/Santiago")
+        let datos = await respuesta.json()
+        console.log(datos)
+        setMensaje(datos.mensaje)        
+    }
+    return(
+        <div>
+            <p>{mensaje}</p>
+            <button onClick={consumoApi}>Llamar API</button>
+        </div>
+    )
+}
+-------------------------------------------------------------------
+
+ NOTAS Y CONSEJOS CLAVE
+
+-------------------------------------------------------------------
+
+- Recuerda que JavaScript distingue entre mayúsculas y minúsculas
+
+  (ej. 'export default function', 'useEffect', 'await').
+
+- Asegúrate de que los puertos de la URL del 'fetch' y del 'origin' de CORS 
+  coincidan exactamente con los puertos donde se están ejecutando tus proyectos.
